@@ -1,0 +1,218 @@
+html, body{
+    background-color: #eeeeee;
+    font-family: Roboto, arial;
+    padding: 0;
+    font-size: 16px;
+    margin: auto;
+    height: 100%;
+}
+
+header{
+  width: 100%;
+  height: 120px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+  font-size: 36px;
+}
+
+h1{
+  margin: auto;
+  padding-top: 10px;
+  font-size: 36px;
+}
+
+h2{
+    padding: 5px 12px;
+    font-size: 36px;
+    color: white;
+    float:left;
+    margin: 0;
+    font-weight: 2600;
+}
+
+#navbar{
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #00a8e8;
+  box-shadow: 0px 2px 10px #393e46;
+}
+
+.navbar{
+  display: block;
+  overflow: hidden;
+}
+
+.search{
+  vertical-align: middle;
+  height: 30px;
+  display: block;
+  float: right;
+  overflow: hidden;
+  background-color: white;
+  border: none;
+  margin-top: 10px;
+}
+
+div.searchbox{
+  margin-right: 20px;
+}
+
+input.search{
+  padding-left: 20px;
+  font-size: 15px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 25px;
+  min-width: 15%;
+}
+
+.material-icons{
+  border-radius: 25px;
+  color: white;
+}
+
+button.search{
+  border-radius: 15px;
+  background-color: inherit;
+}
+
+input.search::placeholder {
+  font-style: italic;
+  font-size: 15px;
+}
+
+.content{
+  width: 100%;
+  margin: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 40px;
+}
+
+.sidebar{
+  float: left;
+  width: 20%;
+  max-width: 240px;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px gray;
+}
+
+nav{
+  padding: 20px 10%;
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+  font-size: 15px;
+}
+
+ul.lessons, .material{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color: #2e3138;
+  text-decoration: none;
+}
+
+li.lessons{
+  display: inline-block;
+  width: 40%;
+  min-width: 100px;
+}
+
+.active{
+  border-right-style: solid;
+  border-right-color: orange;
+  border-right-width: 15px;
+}
+
+.address{
+  margin: 10px 0px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+span.address{
+  font-weight: bold;
+}
+
+.container{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 75%;
+    float: left;
+}
+
+.lessoncontainer{
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.lesson{
+    width: 40%;
+    overflow: hidden;
+    background-color: white;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+    margin: 20px;
+    border-top: 5px;
+    border-top-style: solid;
+    border-top-color: #00a8e8;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.learnbtn{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p.lessonnavtitle{
+  font-size: 16px;
+  font-weight: bold;
+  max-width: 80%;
+}
+
+button.learnmore{
+  border: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00a8e8;
+  color: white;
+  transition: .3s;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button.learnmore:hover{
+  background-color: orange;
+  transition: .3s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px)  {
+  .sidebar { display: none; }
+  nav { display: none; }
+  .container { width: auto;
+              margin: 60px 20px;}
+}
+
+@media screen and (max-width: 1084px)  {
+  .lesson { width: 100%; }
+}
