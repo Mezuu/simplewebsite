@@ -2,33 +2,47 @@ html, body{
     background-color: #eeeeee;
     font-family: Roboto, arial;
     padding: 0;
-    font-size: 16px;
+    font-size: 14px;
     margin: auto;
     height: 100%;
 }
 
 header{
   width: 100%;
-  height: 120px;
+  height: calc(100% - 50px);
   margin: auto;
-  background-color: white;
-  text-align: center;
   font-size: 36px;
+}
+
+.bg{
+  top: 0px;
+  background-image: url("https://previews.123rf.com/images/wavebreakmediamicro/wavebreakmediamicro1509/wavebreakmediamicro150910161/44571707-portrait-of-happy-college-students-gesturing-thumbs-up-in-library.jpg");
+  background-size: cover;
+  background-position: top;
+  filter: brightness(70%);
+  height: 100%;
+  font-size: 100%;
+}
+
+.bgtext{
+  margin-top: 50px;
+  padding-left: 50px;
+  position: absolute;
+  top: 10px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 h1{
   margin: auto;
-  padding-top: 10px;
-  font-size: 36px;
+  font-size: 72px;
+  color: white;
 }
 
 h2{
-    padding: 5px 12px;
     font-size: 36px;
     color: white;
-    float:left;
+    float: left;
     margin: 0;
-    font-weight: 2600;
 }
 
 #navbar{
@@ -36,46 +50,66 @@ h2{
   height: 50px;
   overflow: hidden;
   background-color: #00a8e8;
-  box-shadow: 0px 2px 10px #393e46;
+  /*box-shadow: 0px 2px 10px #393e46;*/
 }
 
 .navbar{
-  display: block;
-  overflow: hidden;
 }
 
-.search{
-  vertical-align: middle;
-  height: 30px;
-  display: block;
+.leftnavbar{
   float: right;
-  overflow: hidden;
-  background-color: white;
-  border: none;
-  margin-top: 10px;
-}
-
-div.searchbox{
   margin-right: 20px;
 }
 
+.menu{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  float: left;
+  padding: 0px 15px;
+  padding-top: 14px;
+  height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu:hover{
+  background-color: orange;
+}
+
+.searchbox{
+  width: 40%;
+  margin-top: 10px;
+  float: right;
+  margin-right: 20px;
+}
+
+.search{
+  float: right;
+  background-color: white;
+  border: none;
+}
+
 input.search{
+  width: 80%;
+  max-width: 300px;
+  background-color: white;
+  height: 30px;
   padding-left: 20px;
   font-size: 15px;
-  width: 100%;
-  max-width: 300px;
   border-radius: 25px;
-  min-width: 15%;
+}
+
+button.search{
+  margin-top: 5px;
+  border-radius: 15px;
+  background-color: inherit;
+  cursor: pointer;
 }
 
 .material-icons{
   border-radius: 25px;
   color: white;
-}
-
-button.search{
-  border-radius: 15px;
-  background-color: inherit;
 }
 
 input.search::placeholder {
@@ -84,7 +118,7 @@ input.search::placeholder {
 }
 
 .content{
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
 
@@ -100,46 +134,9 @@ input.search::placeholder {
   padding-top: 40px;
 }
 
-.sidebar{
-  float: left;
-  width: 20%;
-  max-width: 240px;
-  height: 100%;
-  overflow: hidden;
-  box-shadow: 2px 2px 10px gray;
-}
-
-nav{
-  padding: 20px 10%;
-  width: 100%;
-  height: 1000px;
-  background-color: white;
-  font-size: 15px;
-}
-
-ul.lessons, .material{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  color: #2e3138;
-  text-decoration: none;
-}
-
-li.lessons{
-  display: inline-block;
-  width: 40%;
-  min-width: 100px;
-}
-
-.active{
-  border-right-style: solid;
-  border-right-color: orange;
-  border-right-width: 15px;
-}
-
-.address{
-  margin: 10px 0px;
-  margin-bottom: 20px;
+div.address{
+  width: 80%;
+  margin: 20px 0px;
   font-style: italic;
 }
 
@@ -147,10 +144,59 @@ span.address{
   font-weight: bold;
 }
 
+.main{
+}
+
+.sidebar{
+  float: left;
+  width: 20%;
+  max-width: 240px;
+  height: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  /*box-shadow: 2px 2px 10px gray;*/
+}
+
+.intoduction{
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+nav{
+  padding: 10px 20px 20px 20px;
+  min-width: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+.material{
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+  width: 30%;
+  min-width: 90px;
+  margin-right: 10px;
+  border-left-style: solid;
+  border-left-color: rgba(0, 0, 0, 0);
+  padding-left: 5px;
+}
+
+.material:hover{
+  /*background-color: rgb(240, 240, 240, 0.5);*/
+  /*border-left-color: #00a8e8;*/
+  text-decoration: underline;
+}
+
+div.lessons{
+  min-width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .container{
-    margin-top: 20px;
     margin-left: 20px;
-    width: 75%;
+    width: calc(80% - 20px);
     float: left;
 }
 
@@ -161,16 +207,15 @@ span.address{
 }
 
 .lesson{
-    width: 40%;
+    width: 43%;
     overflow: hidden;
     background-color: white;
     padding: 0px 20px 20px 20px;
     margin-bottom: 20px;
-    margin: 20px;
-    border-top: 5px;
+    margin-right: 20px;
     border-top-style: solid;
     border-top-color: #00a8e8;
-    box-shadow: 2px 2px 10px gray;
+    /*box-shadow: 2px 2px 10px gray;*/
 }
 
 .learnbtn{
@@ -210,9 +255,23 @@ button.learnmore:hover{
   .sidebar { display: none; }
   nav { display: none; }
   .container { width: auto;
-              margin: 60px 20px;}
+              margin: 0px 20px;}
 }
 
-@media screen and (max-width: 1084px)  {
+@media screen and (max-width: 1288px)  {
   .lesson { width: 100%; }
+}
+
+@media screen and (max-width: 906px)  {
+  .sidebar { width: 100%;
+  max-width: 100%; }
+  .container { width: 100%;
+                margin-left: 0;}
+  .lesson { margin-right: 0; }
+  h1{
+  font-size: 10vw;
+  }
+  h2{
+  font-size: 5vw;
+  }
 }
