@@ -228,6 +228,9 @@ div.lessons{
   font-weight: bold;
 }
 
+.description{
+}
+
 p.lessonnavtitle{
   font-size: 16px;
   font-weight: bold;
@@ -235,6 +238,7 @@ p.lessonnavtitle{
 }
 
 button.learnmore{
+  bottom: auto;
   border: none;
   margin-top: 10px;
   padding: 10px 20px;
@@ -249,6 +253,17 @@ button.learnmore:hover{
   background-color: orange;
   transition: .3s;
   cursor: pointer;
+}
+
+.notice{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(200, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  box-shadow: 0px 2px 5px rgb(50, 50, 50);
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 550px)  {
